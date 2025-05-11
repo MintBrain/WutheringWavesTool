@@ -34,7 +34,7 @@
                               <Label styleClass="tip" text="%ui.setting.default.language.tip" />
                            </graphic>
                         </Label>
-                        <ComboBox fx:id="languageBox" disable="true" prefWidth="150.0" />
+                        <ComboBox fx:id="languageBox" prefWidth="150.0" />
                         <VBox spacing="10.0">
                            <children>
                               <Label contentDisplay="RIGHT" styleClass="title-4" text="%ui.setting.base.ui_scale">
