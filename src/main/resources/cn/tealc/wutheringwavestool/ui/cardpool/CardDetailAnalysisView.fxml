@@ -33,7 +33,7 @@
                               <StackPane>
                                  <children>
                                     <PieChart fx:id="pieChart" maxHeight="300.0" maxWidth="300.0" prefHeight="300.0" prefWidth="300.0" />
-                                    <Label text="欧" visible="false" StackPane.alignment="BOTTOM_RIGHT" />
+                                    <Label text="%ui.analysis.charts.label1" visible="false" StackPane.alignment="BOTTOM_RIGHT" />
                                  </children>
                               </StackPane>
                               <VBox alignment="CENTER">

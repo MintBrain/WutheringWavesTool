@@ -16,7 +16,7 @@
                <children>
                   <StackPane>
                      <children>
-                        <Label fx:id="roleEventTitleLabel" styleClass="title-3" text="角色活动" StackPane.alignment="CENTER_LEFT" />
+                        <Label fx:id="roleEventTitleLabel" styleClass="title-3" text="%ui.analysis.common.roleEventTitleLabel" StackPane.alignment="CENTER_LEFT" />
                         <Label fx:id="roleEventTotalTimeLabel" styleClass="title-3" text="640" StackPane.alignment="CENTER_RIGHT" />
                      </children>
                   </StackPane>
@@ -60,7 +60,7 @@
                <children>
                   <StackPane>
                      <children>
-                        <Label fx:id="weaponEventTitleLabel" styleClass="title-3" text="角色活动" StackPane.alignment="CENTER_LEFT" />
+                        <Label fx:id="weaponEventTitleLabel" styleClass="title-3" text="%ui.analysis.common.weaponEventTitleLabel" StackPane.alignment="CENTER_LEFT" />
                         <Label fx:id="weaponEventTotalTimeLabel" styleClass="title-3" text="640" StackPane.alignment="CENTER_RIGHT" />
                      </children>
                   </StackPane>
@@ -104,7 +104,7 @@
                <children>
                   <StackPane>
                      <children>
-                        <Label fx:id="roleBaseTitleLabel" styleClass="title-3" text="角色活动" StackPane.alignment="CENTER_LEFT" />
+                        <Label fx:id="roleBaseTitleLabel" styleClass="title-3" text="%ui.analysis.common.roleBaseTitleLabel" StackPane.alignment="CENTER_LEFT" />
                         <Label fx:id="roleBaseTotalTimeLabel" styleClass="title-3" text="640" StackPane.alignment="CENTER_RIGHT" />
                      </children>
                   </StackPane>
@@ -148,7 +148,7 @@
                <children>
                   <StackPane>
                      <children>
-                        <Label fx:id="weaponBaseTitleLabel" styleClass="title-3" text="角色活动" StackPane.alignment="CENTER_LEFT" />
+                        <Label fx:id="weaponBaseTitleLabel" styleClass="title-3" text="%ui.analysis.common.weaponBaseTitleLabel" StackPane.alignment="CENTER_LEFT" />
                         <Label fx:id="weaponBaseTotalTimeLabel" styleClass="title-3" text="640" StackPane.alignment="CENTER_RIGHT" />
                      </children>
                   </StackPane>
@@ -192,7 +192,7 @@
       </HBox>
       <StackPane fx:id="emptyPane" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label styleClass="title-3" text="当前无数据，请先使用 获取 功能" translateY="-50.0" />
+            <Label styleClass="title-3" text="%ui.analysis.common.emptyPane" translateY="-50.0" />
          </children>
       </StackPane>
    </children>

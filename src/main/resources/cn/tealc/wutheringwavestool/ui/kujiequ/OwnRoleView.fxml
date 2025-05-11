@@ -11,7 +11,7 @@
    <children>
       <AnchorPane fx:id="child" prefHeight="700.0" prefWidth="1000.0">
          <children>
-            <Label styleClass="title-2" text="我的角色" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <Label styleClass="title-2" text="%ui.kujiequ.roleView.title1" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
             <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
                <content>
                   <FlowPane fx:id="roleFlowPane" hgap="10.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0" />

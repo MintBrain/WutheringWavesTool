@@ -13,7 +13,7 @@
 
 <AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" styleClass="role-edit" stylesheets="@../../../css/kujiequ/calculator/CalculatorRoleEdit.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.tealc.wutheringwavestool.ui.kujiequ.calculator.CalculatorWeaponEditView">
    <children>
-      <Label styleClass="title-2" text="计算" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label styleClass="title-2" text="%ui.kujiequ.calculatorWeaponEdit.title" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
          <children>
             <VBox alignment="CENTER" prefWidth="300.0" spacing="30.0">
@@ -21,12 +21,12 @@
                   <HBox alignment="CENTER">
                      <children>
                         <ImageView fx:id="iconIV" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label fx:id="weaponNameLabel" styleClass="title-3" text="武器武器" />
+                        <Label fx:id="weaponNameLabel" styleClass="title-3" text="%ui.kujiequ.calculatorWeaponEdit.weaponName" />
                      </children>
                   </HBox>
                   <HBox styleClass="level-group">
                      <children>
-                        <Label styleClass="skill-title" text="起始等级" />
+                        <Label styleClass="skill-title" text="%ui.kujiequ.calculatorWeaponEdit.startLevel" />
                         <Slider fx:id="startSlider" max="90.0" min="1.0" value="1.0">
                            <styleClass>
                               <String fx:value="skill-slider" />
@@ -37,7 +37,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="138.0" styleClass="level-group">
                      <children>
-                        <Label styleClass="skill-title" text="结束等级" />
+                        <Label styleClass="skill-title" text="%ui.kujiequ.calculatorWeaponEdit.endLevel" />
                         <Slider fx:id="endSlider" max="90.0" min="1.0" value="90.0">
                            <styleClass>
                               <String fx:value="skill-slider" />
@@ -48,21 +48,21 @@
                   </HBox>
                   <HBox alignment="CENTER" spacing="20.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#calculate" styleClass="accent" text="查询" />
-                        <Button mnemonicParsing="false" onAction="#back" text="返回" />
+                        <Button mnemonicParsing="false" onAction="#calculate" styleClass="accent" text="%ui.kujiequ.calculatorWeaponEdit.button.calculate" />
+                        <Button mnemonicParsing="false" onAction="#back" text="%ui.kujiequ.calculatorWeaponEdit.button.back" />
                      </children>
                   </HBox>
                </children>
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Label styleClass="title-3" text="所有材料" />
+                  <Label styleClass="title-3" text="%ui.kujiequ.calculatorWeaponEdit.label.allMaterials" />
                   <FlowPane fx:id="allItemFlowPane" hgap="10.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
                   </FlowPane>
-                  <Label layoutX="10.0" layoutY="10.0" styleClass="title-3" text="缺少材料" />
+                  <Label layoutX="10.0" layoutY="10.0" styleClass="title-3" text="%ui.kujiequ.calculatorWeaponEdit.label.lackMaterials" />
                   <FlowPane fx:id="lackItemFlowPane" hgap="10.0" layoutX="10.0" layoutY="29.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0" VBox.vgrow="ALWAYS" />
                </children></VBox>
          </children>

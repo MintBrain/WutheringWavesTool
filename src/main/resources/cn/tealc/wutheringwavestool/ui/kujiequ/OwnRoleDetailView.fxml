@@ -44,8 +44,8 @@
                                           <Image url="@../../image/attr/2.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="roleName" styleClass="role-name" text="长离" />
-                                    <Label fx:id="roleLevel" styleClass="role-level" text="LV.70" translateY="2.0" />
+                                    <Label fx:id="roleName" styleClass="role-name" text="%ui.kujiequ.roleDetail.roleName" />
+                                    <Label fx:id="roleLevel" styleClass="role-level" text="%ui.kujiequ.roleDetail.roleLevel" translateY="2.0" />
                                  </children>
                               </HBox>
                               <HBox layoutX="686.0" layoutY="35.0" spacing="10.0" styleClass="weapon" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="120.0">
@@ -61,9 +61,9 @@
                                     </StackPane>
                                     <VBox alignment="CENTER_LEFT" spacing="2.0">
                                        <children>
-                                          <Label fx:id="weaponName" styleClass="name" text="武器" />
-                                          <Label fx:id="weaponLevel" styleClass="level" text="LV.70" />
-                                          <Label fx:id="weaponResonLevel" styleClass="level2" text="突破1" />
+                                          <Label fx:id="weaponName" styleClass="name" text="%ui.kujiequ.roleDetail.weaponName" />
+                                          <Label fx:id="weaponLevel" styleClass="level" text="%ui.kujiequ.roleDetail.weaponLevel" />
+                                          <Label fx:id="weaponResonLevel" styleClass="level2" text="%ui.kujiequ.roleDetail.weaponResonLevel" />
                                        </children>
                                     </VBox>
                                  </children>

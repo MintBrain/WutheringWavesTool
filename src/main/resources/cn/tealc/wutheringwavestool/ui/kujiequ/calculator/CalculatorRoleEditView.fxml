@@ -17,7 +17,7 @@
 
 <AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" styleClass="role-edit" stylesheets="@../../../css/kujiequ/calculator/CalculatorRoleEdit.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.tealc.wutheringwavestool.ui.kujiequ.calculator.CalculatorRoleEditView">
    <children>
-      <Label styleClass="title-2" text="计算" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label styleClass="title-2" text="%ui.kujiequ.calculatorRoleEdit.title" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
          <children>
             <VBox alignment="TOP_CENTER" prefWidth="300.0" spacing="10.0">
@@ -25,12 +25,12 @@
                   <HBox alignment="CENTER">
                      <children>
                         <ImageView fx:id="iconIV" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label fx:id="roleNameLabel" styleClass="title-3" text="长离" />
+                        <Label fx:id="roleNameLabel" styleClass="title-3" text="%ui.kujiequ.calculatorRoleEdit.roleName" />
                      </children>
                   </HBox>
                   <HBox styleClass="level-group">
                      <children>
-                        <Label styleClass="skill-title" text="角色等级" />
+                        <Label styleClass="skill-title" text="%ui.kujiequ.calculatorRoleEdit.role.level" />
                         <Slider fx:id="levelSlider" max="90.0" min="1.0" value="90.0">
                            <styleClass>
                               <String fx:value="skill-slider" />
@@ -41,7 +41,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="138.0" styleClass="level-group">
                      <children>
-                        <Label styleClass="skill-title" text="常态攻击" />
+                        <Label styleClass="skill-title" text="%ui.kujiequ.calculatorRoleEdit.skill.normal" />
                         <Slider fx:id="skillSlider01" blockIncrement="1.0" max="10.0" min="1.0" value="10.0">
                            <styleClass>
                               <String fx:value="skill-slider" />
@@ -52,7 +52,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="158.0" styleClass="level-group">
                      <children>
-                        <Label styleClass="skill-title" text="共鸣技能" />
+                        <Label styleClass="skill-title" text="%ui.kujiequ.calculatorRoleEdit.skill.resonance" />
                         <Slider fx:id="skillSlider02" blockIncrement="1.0" max="10.0" min="1.0" value="10.0">
                            <styleClass>
                               <String fx:value="skill-slider" />
@@ -63,7 +63,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="218.0" styleClass="level-group">
                      <children>
-                        <Label styleClass="skill-title" text="共鸣回路" />
+                        <Label styleClass="skill-title" text="%ui.kujiequ.calculatorRoleEdit.skill.circuit" />
                         <Slider fx:id="skillSlider03" blockIncrement="1.0" max="10.0" min="1.0" value="10.0">
                            <styleClass>
                               <String fx:value="skill-slider" />
@@ -74,7 +74,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="178.0" styleClass="level-group">
                      <children>
-                        <Label styleClass="skill-title" text="共鸣解放" />
+                        <Label styleClass="skill-title" text="%ui.kujiequ.calculatorRoleEdit.skill.release" />
                         <Slider fx:id="skillSlider04" blockIncrement="1.0" max="10.0" min="1.0" value="10.0">
                            <styleClass>
                               <String fx:value="skill-slider" />
@@ -85,7 +85,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="198.0" styleClass="level-group">
                      <children>
-                        <Label styleClass="skill-title" text="变奏技能" />
+                        <Label styleClass="skill-title" text="%ui.kujiequ.calculatorRoleEdit.skill.variant" />
                         <Slider fx:id="skillSlider05" blockIncrement="1.0" max="10.0" min="1.0" value="10.0">
                            <styleClass>
                               <String fx:value="skill-slider" />
@@ -94,7 +94,7 @@
                         <Label fx:id="skillLabel05" layoutX="10.0" layoutY="10.0" styleClass="skill-level" text="LV.90" />
                      </children>
                   </HBox>
-                  <Label text="其他技能" />
+                  <Label text="%ui.kujiequ.calculatorRoleEdit.skill.other" />
                   <GridPane fx:id="otherSkillGroup" alignment="CENTER">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -108,36 +108,36 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <CheckBox accessibleText="2-1" mnemonicParsing="false" selected="true" text="常态-2" GridPane.halignment="CENTER" />
-                        <CheckBox accessibleText="3-1" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" selected="true" text="常态-3" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                        <CheckBox accessibleText="2-2" mnemonicParsing="false" selected="true" text="技能-2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                        <CheckBox accessibleText="3-2" mnemonicParsing="false" selected="true" text="技能-3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                        <CheckBox accessibleText="2-3" mnemonicParsing="false" selected="true" text="回路-2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                        <CheckBox accessibleText="3-3" mnemonicParsing="false" selected="true" text="回路-3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                        <CheckBox accessibleText="2-4" mnemonicParsing="false" selected="true" text="解放-2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                        <CheckBox accessibleText="3-4" mnemonicParsing="false" selected="true" text="解放-3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                        <CheckBox accessibleText="2-5" mnemonicParsing="false" selected="true" text="变奏-2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-                        <CheckBox accessibleText="3-5" mnemonicParsing="false" selected="true" text="变奏-3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                        <CheckBox accessibleText="2-1" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.normal.2" GridPane.halignment="CENTER" />
+                        <CheckBox accessibleText="3-1" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.normal.3" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <CheckBox accessibleText="2-2" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.skill.2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                        <CheckBox accessibleText="3-2" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.skill.3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                        <CheckBox accessibleText="2-3" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.circuit.2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                        <CheckBox accessibleText="3-3" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.circuit.3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                        <CheckBox accessibleText="2-4" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.release.2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                        <CheckBox accessibleText="3-4" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.release.3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                        <CheckBox accessibleText="2-5" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.variant.2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                        <CheckBox accessibleText="3-5" mnemonicParsing="false" selected="true" text="%ui.kujiequ.calculatorRoleEdit.skill.checkbox.variant.3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                      </children>
                   </GridPane>
-                  <Label styleClass="text-subtle" text="角色等级低于技能要求等级时，即使技能等级拉高，也只会统计符合角色等级限制的技能材料。" wrapText="true" />
+                  <Label styleClass="text-subtle" text="%ui.kujiequ.calculatorRoleEdit.skill.other.note" wrapText="true" />
                   <HBox alignment="CENTER" spacing="20.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#calculate" styleClass="accent" text="查询" />
-                        <Button mnemonicParsing="false" onAction="#reset" text="返回" />
+                        <Button mnemonicParsing="false" onAction="#calculate" styleClass="accent" text="%ui.kujiequ.calculatorRoleEdit.button.calculate" />
+                        <Button mnemonicParsing="false" onAction="#reset" text="%ui.kujiequ.calculatorRoleEdit.button.reset" />
                      </children>
                   </HBox>
                </children>
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Label styleClass="title-3" text="所有材料" />
+                  <Label styleClass="title-3" text="%ui.kujiequ.calculatorRoleEdit.material.all" />
                   <FlowPane fx:id="allItemFlowPane" hgap="10.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
                   </FlowPane>
-                  <Label layoutX="10.0" layoutY="10.0" styleClass="title-3" text="缺少材料" />
+                  <Label layoutX="10.0" layoutY="10.0" styleClass="title-3" text="%ui.kujiequ.calculatorRoleEdit.material.lack" />
                   <FlowPane fx:id="lackItemFlowPane" hgap="10.0" layoutX="10.0" layoutY="29.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0" VBox.vgrow="ALWAYS" />
                </children></VBox>
          </children>

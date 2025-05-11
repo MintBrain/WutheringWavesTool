@@ -20,12 +20,12 @@
             <ComboBox fx:id="accountBox" prefWidth="150.0" />
          </children>
       </HBox>
-      <Label styleClass="title-2" text="签到" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-      <Label fx:id="isSignLabel" styleClass="warning" text="(今日尚未签到)" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="18.0" />
+      <Label styleClass="title-2" text="%ui.kujiequ.signView.title1" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Label fx:id="isSignLabel" styleClass="warning" text="%ui.kujiequ.signView.isSignLabel" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="18.0" />
       <HBox alignment="CENTER" spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="40.0">
          <children>
-            <ToggleSwitch fx:id="autoSignSwitch" labelPosition="RIGHT" text="启动助手自动签到" />
-            <Button mnemonicParsing="false" onAction="#sign" styleClass="accent" text="签到" />
+            <ToggleSwitch fx:id="autoSignSwitch" labelPosition="RIGHT" text="%ui.kujiequ.signView.autoSignSwitch" />
+            <Button mnemonicParsing="false" onAction="#sign" styleClass="accent" text="%ui.kujiequ.signView.signButton" />
          </children>
       </HBox>
       <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="50.0">
@@ -40,7 +40,7 @@
       <TextArea fx:id="logArea" editable="false" prefHeight="85.0" prefWidth="200.0" styleClass="log" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="280.0" />
       <VBox alignment="CENTER" layoutX="790.0" layoutY="120.0" spacing="5.0" styleClass="history" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
          <children>
-            <Label styleClass="title-4" text="签到统计" />
+            <Label styleClass="title-4" text="%ui.kujiequ.signView.historyTitle" />
             <ListView fx:id="signHistoryListView" prefHeight="200.0" prefWidth="160.0" VBox.vgrow="ALWAYS" />
          </children>
       </VBox>

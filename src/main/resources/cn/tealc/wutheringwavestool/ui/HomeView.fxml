@@ -37,7 +37,7 @@
                            <children>
                               <HBox>
                                  <children>
-                                    <Label fx:id="roleNameLabel" styleClass="data-label-1" text="角色名" />
+                                    <Label fx:id="roleNameLabel" styleClass="data-label-1" text="%ui.home.roleNameLabel" />
                                     <Spacer />
                                     <Button mnemonicParsing="false" onAction="#refreshRoleData">
                                        <graphic>
@@ -54,7 +54,7 @@
                                  <children>
                                     <Label fx:id="levelLabel" styleClass="level" text="LV.48" />
                                     <Spacer />
-                                    <Label fx:id="gameLifeLabel" alignment="CENTER_RIGHT" styleClass="data-label-2" text="已游玩48天" />
+                                    <Label fx:id="gameLifeLabel" alignment="CENTER_RIGHT" styleClass="data-label-2" text="%ui.home.gameLifeLabel" />
                                  </children>
                               </HBox>
                            </children>
@@ -82,7 +82,7 @@
                               <VBox alignment="CENTER">
                                  <children>
                                     <Label fx:id="energyLabel" contentDisplay="BOTTOM" styleClass="data-label-1" text="192/240" />
-                                    <Label fx:id="energyTimeLabel" styleClass="data-label-2" text="今日已满" />
+                                    <Label fx:id="energyTimeLabel" styleClass="data-label-2" text="%ui.home.energyTimeLabel" />
                                  </children>
                               </VBox>
                            </children>
@@ -256,7 +256,7 @@
                         <FontIcon iconLiteral="mdal-book" />
                      </graphic>
                   </MenuButton>
-                  <Button fx:id="gameTimeBtn" layoutX="841.0" layoutY="10.0" mnemonicParsing="false" onAction="#showGameTimerAlert" styleClass="func-btn" text="01小时15分钟">
+                  <Button fx:id="gameTimeBtn" layoutX="841.0" layoutY="10.0" mnemonicParsing="false" onAction="#showGameTimerAlert" styleClass="func-btn" text="%ui.home.gameTimeBtn">
                      <graphic>
                         <FontIcon iconLiteral="mdsmz-timer" />
                      </graphic>

@@ -61,14 +61,14 @@
                                  <children>
                                     <Label prefWidth="90.0" text="%ui.game_time.total.current" />
                                     <Label fx:id="currentTotalTimeLabel" layoutX="10.0" layoutY="10.0" text="32.5" />
-                                    <Label layoutX="150.0" layoutY="10.0" text="小时" />
+                                    <Label layoutX="150.0" layoutY="10.0" text="%ui.game_time.total.hours" />
                                  </children>
                               </HBox>
                               <HBox layoutX="10.0" layoutY="33.0">
                                  <children>
                                     <Label prefWidth="90.0" text="%ui.game_time.total.all" />
                                     <Label fx:id="allTotalTimeLabel" layoutX="10.0" layoutY="10.0" text="42.5" />
-                                    <Label layoutX="150.0" layoutY="10.0" text="小时" />
+                                    <Label layoutX="150.0" layoutY="10.0" text="%ui.game_time.total.hours" />
                                  </children>
                               </HBox>
                               <ProgressBar fx:id="totalProgress" prefWidth="260.0" progress="0.57" />

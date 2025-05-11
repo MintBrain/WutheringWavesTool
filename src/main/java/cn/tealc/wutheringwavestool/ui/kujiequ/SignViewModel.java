@@ -6,6 +6,7 @@ import cn.tealc.wutheringwavestool.dao.UserInfoDao;
 import cn.tealc.wutheringwavestool.model.ResponseBody;
 import cn.tealc.wutheringwavestool.model.message.MessageInfo;
 import cn.tealc.wutheringwavestool.model.message.MessageType;
+import cn.tealc.wutheringwavestool.util.LanguageManager;
 import com.kuro.kujiequ.model.sign.SignGood;
 import com.kuro.kujiequ.model.sign.SignRecord;
 import com.kuro.kujiequ.model.sign.UserInfo;
@@ -52,7 +53,7 @@ public class SignViewModel implements ViewModel {
             getSignHistory(main);
         }else {
             MvvmFX.getNotificationCenter().publish(NotificationKey.MESSAGE,
-                    new MessageInfo(MessageType.WARNING,"当前不存在主用户信息，无法获取，请在账号界面添加用户信息"),false);
+                    new MessageInfo(MessageType.WARNING, LanguageManager.getString("ui.home.message.type01")),false);
         }
 
         userIndex.addListener((observableValue, number, t1) -> {
